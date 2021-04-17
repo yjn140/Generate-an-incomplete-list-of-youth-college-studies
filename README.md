@@ -4,7 +4,7 @@
 ### 具体的使用步骤
 
 
-1.**下载青年大学习未完成名单生成器**[点击下载](https://www.runoob.com)
+1.**下载青年大学习未完成名单生成器**[点击下载](https://github.com/yjn140/Generate-an-incomplete-list-of-youth-college-studies/blob/main/%E7%94%9F%E6%88%90%E5%99%A8/%E7%94%9F%E6%88%90%E5%99%A8.xlsm?raw=true)
 
 2.**打开生成器.xlsm**
 
