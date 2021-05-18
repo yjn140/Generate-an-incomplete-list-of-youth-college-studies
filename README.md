@@ -5,7 +5,7 @@
 
 ### 具体的使用步骤
 
-1. 下载并打开[`生成器/default.xlsm`](https://github.com/yjn140/Generate-an-incomplete-list-of-youth-college-studies/raw/main/%E7%94%9F%E6%88%90%E5%99%A8/%E7%94%9F%E6%88%90%E5%99%A8.xlsm)
+1. 下载并打开[`生成器/default.xlsm`](https://download.fastgit.org/yjn140/Generate-an-incomplete-list-of-youth-college-studies/releases/download/1.1/default.xlsm)
 2. 点击一下“打开/保存”团员名单，把需要检查完成情况的人员名单替换上去。<u>班上团员名单或者全班的名单，取决于每个学校的要求----团员必须做&每个人都要做</u>
 3. 把这个excel文件保存，以后每次都可以使用这个文件执行代码后，把未完成名单拷贝到其他excel表格
 4. 从[江西青年大学习管理后台](https://jxtw.h5yunban.cn/jxtw-qndxx/admin/login.php)下载某一团支部，某一期的青年大学习完成情况。<u>一个.csv文件</u>
