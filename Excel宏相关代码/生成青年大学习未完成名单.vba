@@ -4,6 +4,24 @@ Sub 生成青年大学习未完成名单()
 '
 
 '
+    Dim time As String
+    time = CStr(Now())
+    Dim filePath As String
+    filePath = [函数调用!B5] & "导出文件.csv"
+  
+    If IsFileExists(filePath) = True Then
+     Sheets("函数调用").Select
+    Else
+     MsgBox "未找到导出文件.csv，请对csv文件进行更名！"
+     If Workbooks.Count > 1 Then
+      ActiveWorkbook.Close SaveChanges:=False
+     End If
+     If Workbooks.Count = 1 Then
+      Application.Quit
+      ActiveWorkbook.Close SaveChanges:=False
+     End If
+    End If
+
     If Sheets("团员名单").Visible = Ture Then
     Sheets("团员名单").Visible = False
     End If
@@ -14,6 +32,9 @@ Sub 生成青年大学习未完成名单()
     Sheets("导出文件").Visible = True
     Sheets("导出文件").Select
     ActiveWorkbook.RefreshAll
+    If Application.Wait(Now + TimeValue("0:00:10")) Then
+    Sheets("函数调用").Select
+    End If
     Application.CommandBars("Queries and Connections").Visible = False
     Sheets("团员名单").Select
     Columns("B:B").Select
@@ -201,7 +222,8 @@ Sub 生成青年大学习未完成名单()
     Selection.Copy
     Sheets("未完成名单").Select
     Range("A1").Select
-    ActiveSheet.Paste
+    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+        :=False, Transpose:=False
     Sheets("临时生成页面").Select
     Application.CutCopyMode = False
     Application.DisplayAlerts = False
@@ -243,3 +265,15 @@ Sub 生成青年大学习未完成名单()
     End With
     ActiveCell.FormulaR1C1 = "=导出文件!R[3]C&""未完成名单"""
 End Sub
+
+Private Function IsFileExists(ByVal strFileName As String) As Boolean
+  If Len(Dir(strFileName)) <> 0 Then
+    IsFileExists = True
+  Else
+    IsFileExists = False
+  End If
+End Function
+
+
+
+
