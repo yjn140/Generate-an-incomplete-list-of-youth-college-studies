@@ -17,14 +17,32 @@
 
 ### 视频介绍
 
+```html
+<style type="text/css">
+.aspect-ratio {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+}
+.aspect-ratio iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+</style>
+```
+
+
+
+
+
+<iframe src="//player.bilibili.com/player.html?aid=796797075&bvid=BV1eC4y1t7Bg&cid=226136910&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
 ### 更新日志
 
-2021.4.15  上传生成器
-
-2021.5.18  增加对.csv文件是否更名的判断
-
-2021.5.23 彻底解决数据表刷新不顺序执行的问题 [网上找到的解决方案](http://club.excelhome.net/thread-1131212-1-1.html) 
-
-> 大概原因是  `ActiveWorkbook.RefreshAll`这个函数在vba里面并不是顺序执行，而是在所有函数执行完之后执行。当遇到上次所使用到的.csv文件的数据被保存在生成器中，下一次制作就会因为代码无法顺序执行而导致生成出来的未完成名单出错。
-
-2021.
+- 2021.4.15  上传生成器
+- 2021.5.18  增加对.csv文件是否更名的判i断
+- 2021.5.23 彻底解决数据表刷新不顺序执行的问题 [网上找到的解决方案](http://club.excelhome.net/thread-1131212-1-1.html)     （大概原因是`ActiveWorkbook.RefreshAll`这个函数在vba里面并不是顺序执行，而是在所有函数执行完之后执行。当遇到上次所使用到的.csv文件的数据被保存在生成器中，下一次制作就会因为代码无法顺序执行而导致生成出来的未完成名单出错。解决方法就是在数据--查询链接 里面关闭后台刷新）
