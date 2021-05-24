@@ -17,21 +17,6 @@
 
 ### 视频介绍
 
-```html
-<style type="text/css">
-.aspect-ratio {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 75%;
-}
-</style>
-```
-
-
-
-
-
 <iframe src="//player.bilibili.com/player.html?aid=796797075&bvid=BV1eC4y1t7Bg&cid=226136910&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" position=absolute width=100%   height=100% left=0 top= 0;> </iframe>
 
 ### 更新日志
