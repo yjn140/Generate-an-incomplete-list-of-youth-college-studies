@@ -32,7 +32,7 @@ Sub 生成青年大学习未完成名单()
     Sheets("导出文件").Visible = True
     Sheets("导出文件").Select
     ActiveWorkbook.RefreshAll
-    If Application.Wait(Now + TimeValue("0:00:10")) Then
+    If Application.Wait(Now + TimeValue("0:00:01")) Then
     Sheets("函数调用").Select
     End If
     Application.CommandBars("Queries and Connections").Visible = False
@@ -273,6 +273,8 @@ Private Function IsFileExists(ByVal strFileName As String) As Boolean
     IsFileExists = False
   End If
 End Function
+
+
 
 
 
