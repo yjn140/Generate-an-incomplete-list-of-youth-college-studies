@@ -17,7 +17,9 @@
 
 ### 视频介绍
 
-<iframe src="//player.bilibili.com/player.html?aid=796797075&bvid=BV1eC4y1t7Bg&cid=226136910&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+[点击查看](#)
+
+------
 
 
 
