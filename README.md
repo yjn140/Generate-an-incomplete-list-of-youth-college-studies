@@ -25,13 +25,6 @@
   height: 0;
   padding-bottom: 75%;
 }
-.aspect-ratio iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-}
 </style>
 ```
 
@@ -39,7 +32,7 @@
 
 
 
-<iframe src="//player.bilibili.com/player.html?aid=796797075&bvid=BV1eC4y1t7Bg&cid=226136910&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<iframe src="//player.bilibili.com/player.html?aid=796797075&bvid=BV1eC4y1t7Bg&cid=226136910&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" position=absolute width=100%   height=100% left=0 top= 0;> </iframe>
 
 ### 更新日志
 
