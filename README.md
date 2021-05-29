@@ -17,7 +17,7 @@
 
 ### 视频介绍
 
-[点击查看](#)
+[点击查看](https://www.bilibili.com/video/BV1t64y1k7H3?share_source=copy_web)
 
 ------
 
